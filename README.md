@@ -12,7 +12,7 @@ Bienvenue dans l'application de gestion pour orthophoniste, développée en Java
 
 ## Prérequis
 - **Java Development Kit (JDK)** (version 11 ou supérieure recommandée)
-- **JavaFX SDK** (version 26 configurée dans ce projet)
+- **JavaFX SDK** (version 21 configurée dans ce projet)
 - **Visual Studio Code** avec l'extension *Extension Pack for Java* (ou un IDE équivalent comme IntelliJ/Eclipse).
 
 ## Installation et Exécution
@@ -25,8 +25,8 @@ Bienvenue dans l'application de gestion pour orthophoniste, développée en Java
 
 2. **Configuration JavaFX dans VS Code** :
    - Assurez-vous d'avoir téléchargé le [SDK JavaFX](https://gluonhq.com/products/javafx/).
-   - Extrayez-le dans `C:\javafx-sdk-26\`.
-   - Le projet est configuré pour trouver les bibliothèques JavaFX dans `C:\javafx-sdk-26\lib`. Si le chemin est différent, mettez à jour `.vscode/launch.json` et `.vscode/settings.json`.
+   - Extrayez-le dans `C:\javafx-sdk-21\`.
+   - Le projet est configuré pour trouver les bibliothèques JavaFX dans `C:\javafx-sdk-21\lib`. Si le chemin est différent, mettez à jour `.vscode/launch.json` et `.vscode/settings.json`.
 
 3. **Lancer l'application** :
    - Ouvrez le projet dans VS Code.
