@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="anamneseEnfantController">
+   <children>
+      <Pane layoutX="30.0" layoutY="20.0" prefHeight="45.0" prefWidth="540.0">
+         <children>
+            <TextFlow layoutX="-4.0" layoutY="-3.0" prefHeight="52.0" prefWidth="546.0">
+               <children>
+                  <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Anamnèse" wrappingWidth="96.40625">
+                     <font>
+                        <Font name="Poppins Regular" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets left="205.0" top="6.0" />
+               </padding>
+            </TextFlow>
+         </children>
+      </Pane>
+      <ScrollPane layoutY="86.0" prefHeight="314.0" prefWidth="600.0" style="-fx-background-color: #ffffff;">
+         <content>
+            <Pane prefHeight="901.0" prefWidth="540.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Button disable="true" layoutX="39.0" layoutY="4.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="184.0" style="-fx-background-color: ffffff; -fx-border-color: #00ced0; -fx-border-radius: 10;" text="structure familiale" textFill="#00ced0" />
+                  <Button disable="true" layoutX="315.0" layoutY="4.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="184.0" style="-fx-background-color: ffffff; -fx-border-color: #00ced0; -fx-border-radius: 10;" text="dynamique familiale" textFill="#00ced0" />
+                  <TextArea layoutX="39.0" layoutY="149.0" prefHeight="122.0" prefWidth="184.0" promptText="Réponse" style="-fx-background-color: #ffffff;" />
+                  <TextArea layoutX="315.0" layoutY="149.0" prefHeight="122.0" prefWidth="184.0" promptText="Réponse" style="-fx-background-color: #ffffff;" />
+                  <Button fx:id="getNewQuestionStructure" layoutX="198.0" layoutY="116.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" style="-fx-background-radius: 10; -fx-background-color: #00ced0;" text="↺" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="getNewQuestionDynamique" layoutX="474.0" layoutY="116.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" style="-fx-background-radius: 10; -fx-background-color: #00ced0;" text="↺" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <TextFlow layoutX="39.0" layoutY="56.0" prefHeight="74.0" prefWidth="184.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Question" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="315.0" layoutY="56.0" prefHeight="74.0" prefWidth="184.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Question" />
+                     </children>
+                  </TextFlow>
+                  <Button disable="true" layoutX="40.0" layoutY="295.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="184.0" style="-fx-background-color: ffffff; -fx-border-color: #00ced0; -fx-border-radius: 10;" text="antécédents familiaux" textFill="#00ced0" />
+                  <Button disable="true" layoutX="316.0" layoutY="295.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="184.0" style="-fx-background-color: ffffff; -fx-border-color: #00ced0; -fx-border-radius: 10;" text="conditions natales" textFill="#00ced0" />
+                  <TextArea layoutX="40.0" layoutY="440.0" prefHeight="122.0" prefWidth="184.0" promptText="Réponse" style="-fx-background-color: #ffffff;" />
+                  <TextArea layoutX="316.0" layoutY="440.0" prefHeight="122.0" prefWidth="184.0" promptText="Réponse" style="-fx-background-color: #ffffff;" />
+                  <Button fx:id="getNewQuestionAntecedents" layoutX="199.0" layoutY="407.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" style="-fx-background-radius: 10; -fx-background-color: #00ced0;" text="↺" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="getNewQuestionConditions" layoutX="475.0" layoutY="407.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" style="-fx-background-radius: 10; -fx-background-color: #00ced0;" text="↺" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <TextFlow layoutX="40.0" layoutY="347.0" prefHeight="74.0" prefWidth="184.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Question" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="316.0" layoutY="347.0" prefHeight="74.0" prefWidth="184.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Question" />
+                     </children>
+                  </TextFlow>
+                  <Button disable="true" layoutX="37.0" layoutY="582.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="184.0" style="-fx-background-color: ffffff; -fx-border-color: #00ced0; -fx-border-radius: 10;" text="développement psychomoteur" textFill="#00ced0" />
+                  <Button disable="true" layoutX="313.0" layoutY="582.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="184.0" style="-fx-background-color: ffffff; -fx-border-color: #00ced0; -fx-border-radius: 10;" text="caractère et comportement" textFill="#00ced0" />
+                  <TextArea layoutX="37.0" layoutY="727.0" prefHeight="122.0" prefWidth="184.0" promptText="Réponse" style="-fx-background-color: #ffffff;" />
+                  <TextArea layoutX="313.0" layoutY="727.0" prefHeight="122.0" prefWidth="184.0" promptText="Réponse" style="-fx-background-color: #ffffff;" />
+                  <Button fx:id="getNewQuestionDev" layoutX="196.0" layoutY="694.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" style="-fx-background-radius: 10; -fx-background-color: #00ced0;" text="↺" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="getNewQuestioncarac" layoutX="472.0" layoutY="694.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" style="-fx-background-radius: 10; -fx-background-color: #00ced0;" text="↺" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <TextFlow layoutX="37.0" layoutY="634.0" prefHeight="74.0" prefWidth="184.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Question" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="313.0" layoutY="634.0" prefHeight="74.0" prefWidth="184.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Question" />
+                     </children>
+                  </TextFlow>
+               </children>
+            </Pane>
+         </content>
+         <padding>
+            <Insets left="31.0" />
+         </padding>
+      </ScrollPane>
+   </children>
+</AnchorPane>

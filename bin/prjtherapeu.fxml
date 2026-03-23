@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prjtherapeuController">
+   <top>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="155.0" right="169.0" top="-40.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="19.0" top="71.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Projet Thérapeutique" textAlignment="CENTER" wrappingWidth="420.968017578125">
+               <font>
+                  <Font name="Poppins Regular" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+   </top>
+   <center>
+      <Pane prefHeight="280.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea layoutX="71.0" prefHeight="226.0" prefWidth="471.0" promptText="Décriver la démarche à adopter pour prendre en charge les troubles du patient" style="-fx-background-color: #ffffff;" />
+            <Button fx:id="enregistrer" layoutX="426.0" layoutY="243.0" mnemonicParsing="false" style="-fx-background-color: #00ced0;" text="Enregistrer" textFill="WHITE">
+               <padding>
+                  <Insets bottom="3.0" left="15.0" right="15.0" top="3.0" />
+               </padding>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets top="-68.0" />
+         </BorderPane.margin>
+      </Pane>
+   </center>
+</BorderPane>

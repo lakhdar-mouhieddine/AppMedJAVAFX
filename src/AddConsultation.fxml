@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddConsultationController">
+   <right>
+      <VBox alignment="CENTER" prefHeight="432.0" prefWidth="500.0" style="-fx-background-color: white; -fx-border-radius: 10;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Nouvelle Consultation" textFill="#00083e">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="8.0" />
+               </VBox.margin>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#627e94" height="1.0" stroke="#627e94" strokeType="INSIDE" width="450.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Rectangle>
+            <Label text="Veuillez remplir ce form pour continuer" textFill="#0000007f">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="nom" promptText="Nom" style="-fx-background-color: FAFAFA;">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="prenom" promptText="Prenom" style="-fx-background-color: FAFAFA;" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+               </children>
+            </GridPane>
+            <GridPane layoutX="26.0" layoutY="110.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="age" promptText="Age" style="-fx-background-color: FAFAFA;">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <ChoiceBox fx:id="typeConsultation" prefHeight="26.0" prefWidth="209.0" style="-fx-background-color: #fafafa;" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin>
+                  </ChoiceBox>
+               </children>
+               <padding>
+                  <Insets top="9.0" />
+               </padding>
+            </GridPane>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <DatePicker fx:id="date" prefHeight="25.0" prefWidth="196.0" style="-fx-background-color: fafafa;" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets right="-20.0" />
+                     </padding>
+                  </DatePicker>
+                  <TextField fx:id="heure" promptText="Heure" style="-fx-background-color: FAFAFA;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets left="8.0" top="11.0" />
+               </padding>
+            </GridPane>
+            <GridPane prefHeight="37.0" prefWidth="468.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="468.0" minWidth="10.0" prefWidth="468.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="0.0" prefWidth="0.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <Button fx:id="enregistrer" mnemonicParsing="false" onAction="#enreg" prefHeight="35.0" prefWidth="450.0" style="-fx-background-color: #00CED0;" text="Enregistrer" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="10.0" right="10.0" top="-19.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="91.0" left="50.0" right="50.0" top="101.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="-49.0" left="15.0" right="15.0" top="-22.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>

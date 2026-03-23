@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="314.0" prefWidth="340.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddRDVController">
+   <children>
+      <AnchorPane prefHeight="73.0" prefWidth="340.0" style="-fx-background-color: #00CED0; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <Text fx:id="user" fill="WHITE" layoutX="7.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un Rendez-Vous" textAlignment="CENTER" wrappingWidth="320.9999389648435">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="consultation" layoutX="40.0" layoutY="122.0" mnemonicParsing="false" onAction="#addConsultation" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: #00ced0; -fx-background-radius: 10;" text="Consultation" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutY="56.0" prefHeight="26.0" prefWidth="340.0" style="-fx-background-color: #00CED0;" />
+      <Button fx:id="suivi" layoutX="40.0" layoutY="185.0" mnemonicParsing="false" onAction="#addSuivi" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: #00ced0; -fx-background-radius: 10;" text="Suivi" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="atelier" layoutX="40.0" layoutY="246.0" mnemonicParsing="false" onAction="#addAtelier" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: #00ced0; -fx-background-radius: 10;" text="Atelier" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

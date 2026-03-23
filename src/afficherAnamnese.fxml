@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="afficherAnamneseController">
+    <top>
+        <GridPane BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="271.3333740234375" minWidth="10.0" prefWidth="73.66663869222009" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="723.3333752950033" minWidth="10.0" prefWidth="686.0000279744467" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Consulter l'anamnèse " textFill="#00083dcc" GridPane.columnIndex="1">
+                    <font>
+                        <Font name="Arial Bold" size="25.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets right="50.0" />
+                    </GridPane.margin>
+                </Label>
+                <Button fx:id="retour" mnemonicParsing="false" onAction="#retourPage" style="-fx-background-color: #00CED0;" text="Retour" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </BorderPane.margin>
+        </GridPane>
+    </top>
+    <center>
+        <ScrollPane hbarPolicy="NEVER">
+            <content>
+            <VBox fx:id="afficher" alignment="CENTER" fillWidth="true" prefHeight="430.0" prefWidth="800.0" style="-fx-background-color: white;">
+               <children> 
+                </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding> 
+            </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

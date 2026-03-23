@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="339.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddPatientController">
+   <children>
+      <Pane prefHeight="94.0" prefWidth="339.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <AnchorPane layoutY="43.0" prefHeight="30.0" prefWidth="339.0" style="-fx-background-color: #00CED0;" />
+            <AnchorPane prefHeight="73.0" prefWidth="339.0" style="-fx-background-color: #00CED0; -fx-background-radius: 15;">
+               <children>
+                  <Label layoutX="83.0" layoutY="26.0" text="Nouveau Patient" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="lieu" promptText="Lieu de naissnace" style="-fx-background-color: #fafafa;" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <DatePicker fx:id="date" onAction="#addsection" style="-fx-background-color: #fafafa;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </GridPane.margin>
+            </DatePicker>
+         </children>
+         <VBox.margin>
+            <Insets top="-3.0" />
+         </VBox.margin>
+      </GridPane>
+      <GridPane layoutX="10.0" layoutY="109.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="numtel" promptText="Numéro de téléphone " style="-fx-background-color: #fafafa;" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="adress" layoutX="185.0" layoutY="13.0" promptText="Adresse" style="-fx-background-color: #fafafa;">
+               <GridPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="12.0" />
+         </VBox.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </GridPane>
+      <GridPane fx:id="Genfant" layoutX="10.0" layoutY="146.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="numparent" promptText="Numéro du parent" style="-fx-background-color: #fafafa;" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="classetude" layoutX="185.0" layoutY="13.0" promptText="Classe d'étude" style="-fx-background-color: #fafafa;">
+               <GridPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="12.0" />
+         </VBox.margin>
+      </GridPane>
+      <GridPane fx:id="Gadulte" layoutX="10.0" layoutY="185.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="profession" promptText="Profession" style="-fx-background-color: #fafafa;" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="diplome" layoutX="185.0" layoutY="13.0" promptText="Diplôme" style="-fx-background-color: #fafafa;">
+               <GridPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </GridPane>
+      <Button fx:id="enreg" mnemonicParsing="false" onAction="#enregistrer" prefHeight="32.0" prefWidth="269.0" style="-fx-background-color: #00ced0; -fx-background-radius: 10;" text="Enregistrer" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="35.0" top="20.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>
